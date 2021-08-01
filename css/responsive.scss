@@ -1,0 +1,533 @@
+
+@media (max-width:768px){
+
+    /*top_sp*/
+
+    .top{
+        
+        padding: 50px 0;
+
+        &-section{
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+
+        &-img {
+            width: 100%;
+            height: 400px;
+        }
+
+        &-content{
+            padding: 30px 4vw;
+            margin: 0;
+
+            &-reverse{
+                padding: 30px 4vw;
+                margin: 0;
+            }
+        }
+
+        &-lead{
+            font-size:2.5rem ;
+            padding: 0 0 30px 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        &-text{
+            margin: 0;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        &-btn{
+            display: block;
+            margin: 0 auto;
+        }
+
+    }
+
+
+    /* recommended_sp */
+
+    .recommended{
+
+        &-item{
+            display: flex;
+            padding-bottom: 60px;
+            width: 100%;
+            
+        }
+
+        &-list{
+            display: block;
+            padding: 0;
+
+            &-img{
+                max-width: 300px;
+                max-height: 225px;
+                width: 100%;
+                height: 100%;
+            }
+
+                & img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            
+
+            &-content{
+                margin-left:20px ;
+            }
+        } 
+
+    }
+
+    /*news_sp*/
+
+    .news{
+
+        &-container-wrapper{
+            margin: 50px auto;
+        }
+
+        &-container{
+            display: block;
+        }
+
+        &-item{
+            margin-bottom: 4vw;
+            font-size: 1.5rem;
+        }
+    }
+
+    /*access_sp*/
+    .access{
+
+        &-section{
+            display: block;
+        }
+
+        &-content{
+            margin: 0;
+            padding-top: 15px;
+        }
+
+        &-map{
+            padding: 50px 0 100px;
+            height: 600px;
+
+            & iframe{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
+    /*下層ページ
+    ------------------------------*/
+
+    .lower-main-intro{
+        padding:0 4vw ;
+    }
+
+    .lower-section{
+
+        display: flex;
+        flex-direction: column;
+        height: 750px;
+        padding: 0 4vw;
+
+
+        &:nth-child(even) {
+            flex-direction:row;
+            display: flex;
+            flex-direction: column;
+            height: 750px;
+        }
+
+    
+        &-img{
+            width: 100%;
+            height: 400px;
+        }
+
+        &-content{
+            width: 100%;
+            padding: 30px 4vw;
+            position: relative;
+            top: 0;
+
+
+            &-inner{
+                padding: 0;
+            }
+        }
+
+        &-content-reverse{
+            width: 100%;
+            padding: 30px 4vw;
+            position: relative;
+            top: 0;
+            
+        }
+
+
+        &-text{
+
+            & h3{
+                margin: 0 0 20px 0;
+            }
+
+            & p{
+                margin: 0 0 20px 0;
+            }
+        } 
+
+    }
+
+    .onsen-info-content-title{
+        width: 90px;
+    }
+    
+    .onsen-info-content-desc{
+        width: auto;
+    }
+
+
+
+}
+
+@media (max-width:760px){
+
+    /*共通部分
+    ------------------------------*/
+
+    /* header_sp */
+
+    .header-inner{
+        padding: 0px 4vw;
+        height: 80px;
+    }
+
+
+    .site-title{    
+        font-size: 2rem;
+    }
+
+    .reserve-btn{
+        width: 100px;
+        height: 35px;
+        padding: 0;
+        font-size: 1.2rem;
+        margin-right: 40px;
+    }
+
+
+    .header-nav-bg{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1;
+        background: #333;
+        opacity: 0.8;
+        transition: all 0.6s;
+        cursor: pointer;
+    }
+
+
+    .header-nav{
+        display: none;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        width: 50%;
+        max-width: 250px;
+        height: 100vh;
+        margin: 0;
+        background-color: #282f35;
+        z-index: 10;
+    }
+
+    .nav-list{
+        margin: 0;
+        height: 100%;
+        flex-direction: column;
+        padding: 6vw;
+    }
+
+    .nav-item{
+        margin: 0;
+     
+        border-bottom: solid 1px #fff;
+        text-indent: 1rem;
+
+        & a{
+            padding: 10px 0;
+            display: block;
+
+            &:hover{
+                color:#AAA5A5 ;
+            }
+        }
+
+        
+    }
+
+
+
+    /*ハンバーガーメニュー*/
+
+    .burger-btn{
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 4vw;
+    }
+
+    .bar{
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    transition: .3s;
+    }
+
+    .bar_top{
+        margin-bottom: 8px;
+    }
+
+    .bar_mid{
+    margin-bottom: 8px;
+    }
+
+    /* ハンバーガーメニューが開いたとき */
+
+    .burger-btn.cross .bar_top{
+    transform: rotate(45deg) translate(8px,8px);
+    transition: .3s;
+    }
+    .burger-btn.cross .bar_mid{
+    opacity: 0;
+    transition: .3s;
+    }
+    .burger-btn.cross .bar_bottom{
+    transform: rotate(-45deg) translate(8px,-8px);
+    transition: .3s;
+    }
+
+
+    body.noscroll{
+    overflow: hidden;
+    }  
+
+
+
+
+    /*これを書くとハンバーガーボタンが上手く表示される*/
+    .burger-btn{
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+        outline: none;
+        padding: 0;
+        appearance: none;
+    }
+
+    .sp-br{
+        display: block;
+    }
+
+    .pc-br{
+        display: none;
+    }
+
+
+    .header.fixed{
+        .bar{
+            background-color: #000;
+        }
+
+        .nav-item a{
+            color:#fff;
+            padding: 10px 0;
+            display: block;
+
+            &:hover{
+                color:#AAA5A5 ;
+            }
+        }
+    }
+
+
+    /* intro_sp */
+
+    .intro{
+        padding: 20px 4vw;
+        
+        &-wrapper{
+            writing-mode: horizontal-tb;
+            
+        }
+
+        &-title{
+            font-size: 2.8rem;
+            letter-spacing: 0; 
+            line-height: 2;
+            text-indent: 0;
+        }
+
+        &-content{
+            line-height: 1.6;
+            letter-spacing: 0;
+            padding-left: 15px;
+        }
+
+        &-name {
+            text-indent:0;
+            text-align: right;
+        }
+
+        
+    }
+
+
+    /*下層ページ
+    ------------------------------*/
+
+    .lower-header{
+        .bar{
+            background-color: #000;
+        }
+
+        .nav-item a{
+            color:#fff;
+        }
+    }
+
+
+
+
+}
+
+
+@media (max-width:375px){
+
+
+
+
+    /*HOME
+    ------------------------------*/
+
+    /*fv_sp*/
+
+    .fv-copy{
+        line-height: 70px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        right: 20vw;
+    }
+
+
+    
+
+    /*top_sp*/
+
+    .top{
+        &-img {
+            width: 100%;
+            height: 200px;
+        }
+    }
+
+
+    /*recommended_sp*/
+
+    .section{
+        &-heading{
+            padding:30px 0;
+        }
+        
+        &-title{
+            font-size: 3rem;  
+        }
+    }
+
+    .recommended{
+
+        &-list{
+            display: block;
+            padding: 0;
+
+            &-img{
+                max-width: 100%;
+                max-height: 100%;
+                width: 100%;
+                height: 100%;
+            }
+
+            &-content{
+                margin-left:0px ;
+            }
+        }
+
+        &-item{
+            display: block;
+            padding-bottom: 60px;
+            width: 100%;
+        }
+
+        
+
+    }
+
+
+
+    /*下層ページ
+    ------------------------------*/
+
+    .lower-section{
+        padding: 0 4vw;
+        height: 550px;
+
+        &:nth-child(even) {
+            height: 550px;
+        }
+
+
+        &-img{
+            width: 100%;
+            height: 240px;
+        }
+
+    }
+
+    .onsen-info-content-item{
+        font-size: 1.4rem;
+    }
+
+    .onsen-info-content-title{
+        width: 80px;
+    }
+
+
+    
+
+
+    
+
+
+
+    
+
+    
+
+
+}
+
